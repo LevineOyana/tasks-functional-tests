@@ -11,6 +11,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 public class TasksTest {
 	
 	public WebDriver acessarAplicacao() {
+		System.setProperty("webdriver.chrome.driver","C:/devops/seleniumDrivers/chromedriver.exe");
 		WebDriver driver = new ChromeDriver();
 		driver.navigate().to("http://10.1.0.4:8001/tasks/");
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
